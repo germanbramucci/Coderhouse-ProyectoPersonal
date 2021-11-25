@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@import '_variables.scss';
+@import '_condicionales.scss'; 
+
+/* ENCABEZADO*/
+@import '_header.scss';
+
+/*CUERPO*/
+
+/*Inicio*/
+#cuerpoInicio{
+    background-color: #f6f6ff;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'imagenesCarrusel imagenesCarrusel imagenesCarrusel'
+    'imagenesCarrusel imagenesCarrusel imagenesCarrusel'
+    'pparrafoInicio parrafoInicio parrafoInicio'
+    'parrafoInicio parrafoInicio parrafoInicio';
+    grid-template-columns: 12fr;   
+    align-items: center;
+}
+.titulo__parrafo{
+    padding: auto;
+    color: $colorNavHover;
+    text-align: center;
+    transition: all 1s;
+    font-weight: 700;
+    margin: 40px 50px 40px 40px;
+    
+}
+.titulo__parrafo:hover{
+    transform: scale(1.3,1.3);
+}
+.carrousel__area{
+    text-align: center;
+    grid-area: 'imagenesCarrusel';
+    justify-content: start;
+    img{width: 400px; 
+        height: 620px;
+    }
+
+}
+.parrafoInicio{
+    grid-area: 'parrafoInicio';
+    color: black;
+    word-spacing: 1px;
+    font-size: 19px;
+    padding:10px 60px 5px 60px;
+    justify-content: center;
+       
+   
+}
+.parrafo__titulos{
+    margin: 40px 50px 5px 40px;
+    padding: auto;
+    color: $colorNavHover;
+    text-align: start;
+    transition: all 1s;
+}
+.parrafo__titulos:hover{
+    transform: scale(1.05,1.05);
+}
+
+/*Candidatos*/
+#cuerpoCandidato{
+    background-color: #f6f6ff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+}
+.cuerpoCandidatos{
+    flex-basis: 100px;
+    margin: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
+    
+}
+.parrafo__candidatos{
+    margin: 25px 35px 25px 25px;
+    padding: 15px 15px 15px 15px;
+    color: $colorNavHover;
+    font-size: 40px;
+}
+.parrafoGatosPerros{
+    color: $colorCuerpo;
+    word-spacing: 1px;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    background-color:#5268cc ;
+    justify-content: center;
+    font-weight: bold;
+    align-content: center;
+}
+.imgIzquierda{
+    float: left;
+    margin: 15px 15px 15px 15px;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
+    transition: 1s;
+}
+
+.imgIzquierda:hover{
+    transform: scale(1.2, 1.2);
+}
+.reset{
+    clear: both;
+}
+.descripcion{
+    color: black;
+    word-spacing: 1px;
+    font-size: 19px;
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    align-content: center;
+    list-style: none;
+}
+/*Aplica*/
+.parrafo__aplica{
+    color:#f6f6ff ;
+    letter-spacing: 0.90px;
+    word-spacing: 1px;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    background-color:#5268cc ;
+    text-align: center;
+    
+}
+#cuerpoAplica{
+    background-color: #f6f6ff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+@import '_formAplica';
+
+.requisitos__contenido{
+    color: black;
+    word-spacing: 1px;
+    font-size: 35px;
+    line-height: 30px;
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    text-align: center;
+  
+}
+.requisitos__contenidoLista{
+    list-style: circle outside;
+    text-decoration: none;
+    margin: 3px;
+    padding: 2px;
+}
+.requisitos__parrafos{
+    padding: 5px 5px 5px 5px;
+}
+/*Mision*/
+.cuerpoMision{
+    background-color: #f6f6ff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+    flex-flow:row nowrap;
+    grid-template-rows: 4fr 4fr 4fr;
+    grid-template-columns: 100vh;
+    grid-template-areas:  
+    'parrafoMision parrafoMision parrafoMision'
+    'multimediaMision multimediaMision multimediaMision'
+    'parrafoMision2 parrafoMision2 parrafoMision2'
+}
+.parrafo__mision{
+    color: #f6f6ff;
+    word-spacing: 1px;
+    font-size: 28px;
+    line-height: 40px;
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    text-align: center;
+    align-items: center;  
+    grid-area:'parrafoMision' ;
+    background-color: #5268cc;
+}
+.video__multimediaMision{
+    grid-area: 'multimediaMision';
+    text-align: center;
+    align-items: center; 
+    margin: 15px 30px 30px 30px;
+    padding:25px 35px 25px 35px;
+
+}
+.parrafo__mision2{
+    grid-area: 'parrafoMision2';
+    text-align: center;
+    align-items: center; 
+    margin: 15px 30px 30px 30px;
+    padding:25px 35px 25px 35px;
+    color: black;
+    word-spacing: 1px;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bolder;
+}
+
+/*PIE DE PAGINA*/
+@import '_footer.scss';
+
+/*PAGINA ERROR 404*/
+
+.page_404{
+    background-color: $colorNav;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+.four_zero_four_bg{
+    color: $colorCuerpo;
+
+}
+.contant_box_404{
+    font-size: 30px;
+    color:$colorCuerpo;
+}
+.boton_volver{
+    text-decoration: none;
+    align-self: start;
+    color: $colorNavHover;
+}
+/*HTML*/
+html{
+    font-family: 'Questrial', sans-serif;
+}
+
+/*MEDIA QUERIE*/
+/*ESCRITORIO*/
+
+@media only screen and (max-width: 768px) {
+    header{
+        background-color:#5268cc;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        font-size: 13px;
+        margin: auto;
+    }
+    .lista li{
+        display:inline;
+        margin: 7px 7px 7px 7px;
+        position: relative;
+    }
+    #cuerpoInicio{
+        background-color: #f6f6ff;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        'imagenesCarrusel imagenesCarrusel'
+        'imagenesCarrusel imagenesCarrusel'
+        'pparrafoInicio parrafoInicio'
+        'parrafoInicio parrafoInicio';
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 9fr ;
+        
+    }
+    .parrafoInicio{
+        grid-area: 'parrafoInicio';
+        color: black;
+        word-spacing: 1px;
+        font-size: 28px;
+        line-height: 40px;
+        margin: 15px 30px 50px 30px;
+        padding:25px 35px 25px 35px;
+        
+    
+    }
+    #colorFondoPie{
+        background-color:#998799;
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr ;
+        grid-template-rows: 3fr;
+        
+    }
+}
+/*TABLET*/
+@media only screen and (max-width: 767px) and (min-width: 321px){
+    header{
+        background-color:#5268cc;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        font-size: 13px;
+        margin: auto;
+    }
+    .lista li{
+        display:inline;
+        margin: 7px 7px 7px 7px;
+        position: relative;
+    }
+    #cuerpoInicio{
+        background-color: #f6f6ff;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        'imagenesCarrusel imagenesCarrusel '
+        'imagenesCarrusel imagenesCarrusel '
+        'pparrafoInicio parrafoInicio '
+        'parrafoInicio parrafoInicio ';
+        grid-template-columns: 1fr;
+        
+        
+    }
+    .imagenesCarrusel{
+        text-align: center;
+        grid-area: 'imagenesCarruse';
+        justify-self: stretch;
+    
+    }
+    .parrafoInicio{
+        grid-area: 'parrafoInicio';
+        color: black;
+        word-spacing: 1px;
+        font-size: 20px;
+        line-height: 17px;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        align-items: center;
+    
+    }
+    #colorFondoPie{
+        background-color: #998799;
+    display: grid;
+    grid-template-areas: 
+    'imagenUbicacion imagenWp legales'
+    'imagenUbicacion imagenIg legales'
+    'imagenUbicacion imagenFb legales';
+    grid-template-columns: 4fr 4fr 4fr ;
+    position: sticky; 
+    width: 100%; 
+    
+}
+        
+} 
+/*MOBILE*/
+@media only screen and (max-width: 320px) {
+    header{
+        background-color:#5268cc;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        font-size: 10px;
+        margin: auto;
+    }
+    .lista li{
+        display:inline;
+        margin: 7px 7px 7px 7px;
+        position: relative;
+    }
+    #cuerpoInicio{
+        background-color: #f6f6ff;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+        'imagenesCarrusel  '
+        'imagenesCarrusel '
+        'pparrafoInicio '
+        'parrafoInicio ';
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr ;
+        
+    }
+    .imagenesCarrusel{
+        text-align: center;
+        grid-area: 'imagenesCarruse';
+        justify-self: stretch;
+    
+    }
+    .parrafoInicio{
+        grid-area: 'parrafoInicio';
+        color: black;
+        word-spacing: 1px;
+        font-size: 20px;
+        line-height: 17px;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        align-items: center;
+    
+    }
+    #colorFondoPie{
+        background-color:#998799;
+        display: none;
+        grid-template-columns: 4fr 4fr 4fr ;
+    }
+        
+} 

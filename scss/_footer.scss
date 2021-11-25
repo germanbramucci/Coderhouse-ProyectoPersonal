@@ -1,0 +1,71 @@
+/*PIE DE PAGINA*/
+#colorFondoPie{
+    background-color: #998799;
+    display: grid;
+    grid-template-areas: 
+    'elemntos__imagenUbi elemntos__imagenWp elemntos__legales'
+    'elemntos__imagenUbi elemntos__imagenIg elemntos__legales'
+    'elemntos__imagenUbi elemntos__imagenFb elemntos__legales';
+    grid-template-columns: 4fr 4fr 4fr ;
+    position: sticky; 
+    width: 100%; 
+    .footer__elementos{
+        color: black;
+        text-decoration: none;
+        justify-self: center;
+        align-items: center;
+        font-weight: 600;
+        .footer__elementos:hover{
+            color:#f6f6ff ;
+        }
+        .elemntos__imagenUbi{
+            list-style-image: url(../imagenes/location_on_white_24dp.svg);
+            list-style-position: inside;
+            text-align: left;
+            grid-area: 'elemntos__imagenUbi';
+            padding: 5px;
+        }
+        .elemntos__imagenWp{
+            list-style-image: url(../imagenes/whatsapp_white_24dp.svg);
+            list-style-position: inside;
+            text-align: center;
+            grid-area: 'elemntos__imagenWp';
+            padding: 5px;
+        }
+        .elemntos__imagenIg{
+            list-style-position: inside;
+            text-align: center;
+            list-style-image: url(../imagenes/photo_camera_white_24dp.svg);
+            grid-area: 'elemntos__imagenIg' ;
+            padding: 5px;
+            
+        }
+        .elemntos__imagenFb{
+            list-style-position: inside;
+            text-align: center;
+            list-style-image: url(../imagenes/thumb_up_off_alt_white_24dp.svg);
+            grid-area: 'elemntos__imagenFb';
+            padding: 5px;
+            
+        }
+        .elemntos__legales{
+            list-style-position: inside;
+            justify-self: center;
+            text-align: right;
+            list-style-image: url(../imagenes/privacy_tip_white_24dp.svg);
+            grid-area: 'elemntos__legales';
+            padding: 5px;
+        }
+        .elementos__ajuste{
+            color: black;
+            text-decoration: none;
+            justify-self: center;
+            align-items: center;
+            font-weight: 600;
+            
+        }
+        .elementos__ajuste:hover{
+            color:#f6f6ff ;
+        }
+    }
+} 

@@ -1,0 +1,27 @@
+@import '_variables.scss';
+
+.parrafo__mision{
+    @if $color == rojo{
+        color: $colorCuerpo;
+        background-color: $colorNav;
+    }@else if $color != rojo{
+        color: $colorFont;
+        background-color: $colorFooter;
+    }
+}
+
+.parrafo__mision2{
+    @if $color == rojo{
+        color: $colorFont;
+    }@else if $color != rojo{
+        color: $colorCuerpo;
+        background-color: $colorNavHover;
+    }
+}
+
+@each $color in mision, mision2 {
+    .parrafo__#{$color}{
+        font-size: $fontSize;
+        font-weight: 490;
+    }
+}

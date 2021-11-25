@@ -1,0 +1,21 @@
+/*Aplica*/
+@import '_variables.scss';
+
+.formulario{
+    margin: 15px 30px 50px 30px;
+    padding:25px 35px 25px 35px;
+    .formulario__cuerpo{
+        background-color: $colorNav;
+        .formulario__aplica{
+            font-weight: 750;
+            text-align: center;
+            word-spacing: 2px;
+            font-size: 25px;
+            line-height: 30px;
+            color:#f6f6ff ;
+            margin: 5px;
+            padding: 3px;
+        }
+    }
+
+}

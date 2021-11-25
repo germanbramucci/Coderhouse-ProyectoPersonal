@@ -1,0 +1,39 @@
+/* ENCABEZADO*/
+@import '_variables.scss';
+
+header{
+    background-color:#5268cc;
+    position: sticky;
+    top: 0;
+    z-index: 2; 
+    .bg-personal{
+        background-color:#5268cc;
+    }
+    .menu__contenidoTitulo{
+        text-decoration: none;
+        color: $colorCuerpo;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    .menu__contenidoLista {
+        color:#FEFAE0 ;
+        font-weight: bold;
+        list-style-type: none;
+        position: relative;
+        font-size: 23px;
+        .menu__items{
+            display:inline-block;
+            margin: 10px 10px 10px 10px;
+            position: relative;
+            .menu__itemsLink{   
+                display: inline-block;
+                text-decoration: none;
+                padding: 10px 15px 10px 15px; 
+                color: #FEFAE0;
+                &:hover{
+                    color: #0a3e9a;
+                }
+            } 
+        }
+    }
+}
