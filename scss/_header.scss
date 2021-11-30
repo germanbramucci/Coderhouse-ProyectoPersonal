@@ -9,18 +9,18 @@ header{
     .bg-personal{
         background-color:#5268cc;
     }
-    .menu__contenidoTitulo{
+    .menu__contenido__tituloFundacion{
         text-decoration: none;
         color: $colorCuerpo;
         font-weight: bold;
-        font-size: 23px;
+        font-size: 13px;
     }
     .menu__contenidoLista {
         color:#FEFAE0 ;
         font-weight: bold;
         list-style-type: none;
         position: relative;
-        font-size: 23px;
+        font-size: 13px;
         .menu__items{
             display:inline-block;
             margin: 10px 10px 10px 10px;

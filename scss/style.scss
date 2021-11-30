@@ -151,7 +151,7 @@
 .requisitos__contenido{
     color: black;
     word-spacing: 1px;
-    font-size: 35px;
+    font-size: 26px;
     line-height: 30px;
     margin: 15px 30px 50px 30px;
     padding:25px 35px 25px 35px;
@@ -198,9 +198,17 @@
     grid-area: 'multimediaMision';
     text-align: center;
     align-items: center; 
-    margin: 15px 30px 30px 30px;
-    padding:25px 35px 25px 35px;
-
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.video__multimediaMision iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .parrafo__mision2{
     grid-area: 'parrafoMision2';
@@ -346,16 +354,20 @@ html{
     }
     #colorFondoPie{
         background-color: #998799;
-    display: grid;
-    grid-template-areas: 
-    'imagenUbicacion imagenWp legales'
-    'imagenUbicacion imagenIg legales'
-    'imagenUbicacion imagenFb legales';
-    grid-template-columns: 4fr 4fr 4fr ;
-    position: sticky; 
-    width: 100%; 
-    
-}
+        display: grid;
+        grid-template-areas: 
+        'imagenUbicacion imagenWp'
+        ' legales imagenIg'
+        ' legales imagenFb';
+        grid-template-columns: 6fr 6fr ;
+        position: sticky; 
+        width: 100%; 
+    }
+    .elemntos__legales{
+        list-style-position: inside;
+        justify-self: center;
+        text-align: left;
+    }
         
 } 
 /*MOBILE*/
@@ -367,6 +379,59 @@ html{
         z-index: 2;
         font-size: 10px;
         margin: auto;
+    }
+    .menu__contenido__tituloFundacion{
+        text-decoration: none;
+        color: $colorCuerpo;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .menu__contenidoLista{
+        color:#FEFAE0 ;
+        font-weight: bold;
+        list-style-type: none;
+        position: relative;
+        font-size: 13px;
+    }
+    .parrafo__mision2{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .parrafo__mision{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .parrafo__aplica{
+        font-size: 20px;
+        line-height: 16px;
+    }
+    .requisitos__contenidoLista{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .requisitos__parrafos{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .parrafo__candidatos{
+        font-size: 18px;
+        line-height: 16px;
+    }
+    .parrafoGatosPerros{
+        font-size: 20px;
+    }
+    .descripcion{
+        font-size: 14px;
+        line-height: 16px;
+        margin: auto;
+        padding: auto;
+    }
+    .menu__imagen{
+        display: none;
+    }
+    .imgIzquierda{
+        width: 150px;
+        height: 150px;
     }
     .lista li{
         display:inline;

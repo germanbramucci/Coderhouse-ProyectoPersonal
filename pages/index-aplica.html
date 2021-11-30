@@ -33,10 +33,12 @@
                     <a href="../index.html"
                         class="menu__contenido__tituloFundacion navbar-brand text-uppercase nav-link navbar-1">Fundacion
                         De Rescate</a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                        <button type="button"
+                        class="navbar-toggler nav-light btn bg-light"
+                        data-bs-toggle="collapse"
                         data-bs-target="#MenuNavegacion">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                 </div>
                 <div id="MenuNavegacion" class="menu__contenido collapse navbar-collapse">
                     <ul class="menu__contenidoLista navbar-nav ms-3">
@@ -45,9 +47,6 @@
                         </li>
                         <li class="menu__items nav-item">
                             <a class="menu__itemsLink  nav-link" href="./index-aplica.html">APLICA</a>
-                        </li>
-                        <li class="menu__items nav-item">
-                            <a class="menu__itemsLink  nav-link" href="./index-mision.html">MISION</a>
                         </li>
                         <li class="menu__items nav-item dropdown">
                             <a class="menu__itemsLink nav-link dropdown-toggle" href="" role="button"
@@ -60,6 +59,9 @@
                                 <li><a class="dropdown-item" href="./index-candidatos.html">Todos los
                                         candidatos</a></li>
                             </ul>
+                        </li>
+                        <li class="menu__items nav-item">
+                            <a class="menu__itemsLink  nav-link" href="./index-mision.html">MISION</a>
                         </li>
                     </ul>
                 </div>
@@ -154,49 +156,55 @@
         <!-- FORMULARIO -->
         <div class="formulario">
             <div class="formulario__cuerpo">
-                <form class="formulario__aplica">
-                    <div>
-                        <label for="">Nombre</label>
-                        <input type="text" value="">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                      <label for="inputNombre4" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="inputNombre4">
                     </div>
-                    <div>
-                        <label for="">Apellido</label>
-                        <input type="text" value="">
+                    <div class="col-md-4">
+                      <label for="inputAplleido4" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="inputApellido4">
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Ej: Juanperez@gmail.com">
+                    <div class="col-md-4">
+                        <label for="inputDni" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id=inputDni placeholder="Last name" aria-label="Last name">
                     </div>
-                    <div>
-                        <label for="">DNI</label>
-                        <input type="text" value="">
+                    <div class="col-md-4">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="juanperez@gmail.com" aria-label="Email">
                     </div>
-                    <div>
-                        <label for="">Nombre del candidato</label>
-                        <input type="text" value="">
+                    <div class="col-md-4">
+                      <label for="inputAddress" class="form-label">Dirección</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="Calle 1234">
                     </div>
-                    <div>
-                        <input type="radio" name="tipo" id="gato">
-                        <label for="gato">Gato</label>
+                    <div class="col-md-4">
+                        <label for="inputAddress" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Buenos Aires">
+                      </div>
+                    <div class="col-md-4">
+                      <label for="inputCandidato" class="form-label">Candidato</label>
+                      <input type="text" class="form-control" id="inputCandidato">
                     </div>
-                    <div>
-                        <input type="radio" name="tipo" id="perro">
-                        <label for="perro">Perro</label>
+                    <div class="col-md-2">
+                      <label for="inputState" class="form-label">Tipo</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Perro</option>
+                        <option selected>Gato</option>
+                        <option selected>Otro</option>
+                      </select>
                     </div>
-                    <div>
-                        <input type="radio" name="sexo" id="otro">
-                        <label for="otro">Otro</label>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          He leido y acepto los terminos y condiciones.
+                        </label>
+                      </div>
                     </div>
-                    <div>
-                        <legend>¡No te olvides de suscribirte al newsletter para estar al tanto de cuando llega un nuevo
-                            candidato y ser el primero en postularte!</legend>
-                        <label for="">Suscribirse al Newsletter</label>
-                        <input type="checkbox" name="Aceptar" id="">
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-dark">Enviar</button>
                     </div>
-                    <div>
-                        <input type="submit" value="Enviar"> <input type="reset" value="Limpiar">
-                    </div>
-                </form>
+                  </form>
             </div>
         </div>
     </main>
