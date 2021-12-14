@@ -472,8 +472,17 @@ html{
     }
     #colorFondoPie{
         background-color:#998799;
-        display: none;
-        grid-template-columns: 4fr 4fr 4fr ;
+        display: grid;
+        grid-template-areas: 
+        'imagenUbicacion'
+        'imagenWp'
+        'imagenIg'
+        'imagenFb'
+        'legales'
+        'legales';
+        grid-template-columns: 12fr ;
+        position: sticky; 
+        width: 100%; 
     }
         
 } 
